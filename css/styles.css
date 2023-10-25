@@ -1,0 +1,347 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Finished CSS reset */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #bbd5ed;
+}
+
+/* NavBar Styles */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.navLeft a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.navBar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.navRight {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.navBar li {
+    margin: 0 10px;
+}
+
+.navBar li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navBar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.menuToggle {
+    display: none;
+}
+
+.closeButton {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.contentContainer {
+    padding: 50px 50px 100px 50px;
+}
+
+.section {
+    padding-bottom: 35px;
+}
+
+.videocontentContainer {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 56.25%;
+}
+
+.doubleHeightGridItem {
+    grid-area: 1 / 2 / 3 / 3
+}
+
+.videocontentContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid1Small2Medium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+.fullScreenImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sectionText {
+    font-size: 1.0rem;
+    line-height: 1.5;
+}
+
+.sectionSubtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 50px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.navBarTitle {
+    font-weight: bolder;
+}
+
+/* Contact US form */
+
+.contactForm {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #2980b9;
+    padding: 25px;
+}
+
+.contactLabel {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contactInput,
+.contactTextarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contactButton {
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+    background-color: #2980b9;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .navRight {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        font-size: 4.5rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #bbd5ed;
+        border: none;
+        box-shadow: none;
+        overflow-y: auto;
+        padding-top: 20%;
+        padding-left: 10%;
+    }
+
+    .navRight li {
+        margin: 0;
+    }
+
+    .navRight li a {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .navBarTitle {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menuToggle:checked+.hamburger+.navRight {
+        display: flex;
+    }
+
+    .closeButton {
+        display: block;
+    }
+
+    .doubleHeightGridItem {
+        grid-area: 1
+    }
+
+    .grid1Small2Medium {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInAnimated {
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+}

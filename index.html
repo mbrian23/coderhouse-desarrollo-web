@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/contacts-form.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>El Mundo de los Lagos</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navBar">
+            <div class="navLeft">
+                <a href="./index.html">
+                    <img class="logoImage" src="./assets/logo.png" alt="Logo">
+
+                    <h1 class="navBarTitle">El mundo de los Lagos</h1>
+                </a>
+            </div>
+            <!-- This is to achieve the hamburger menu functionality without using javascript -->
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="hamburger">☰</label>
+            <ul class="navRight fadeInAnimated">
+                <li class="navListElement"><label for="menuToggle" class="closeButton">✖</label></li>
+                <li class="navListElement"><a href="./pages/empire.html">Imperio</a></li>
+                <li class="navListElement"><a href="./pages/order.html">La Orden</a></li>
+                <li class="navListElement"><a href="./pages/players.html">Ustedes</a></li>
+                <li class="navListElement"><a href="./pages/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+
+        <div class="contentContainer">
+            <section class="section fadeInAnimated">
+                <div class="grid1Small2Medium">
+                    <div>
+                        <h2 class="title">
+                            Sínopsis
+                        </h2>
+                        <p>
+                            Un grupo de mercenarios, provenientes de un portal dimensional, llega inesperadamente al
+                            Mundo
+                            de
+                            los
+                            Lagos.
+                            Sin
+                            medios
+                            para regresar a su mundo original, pronto descubren que su única esperanza de volver a casa
+                            es
+                            aliarse
+                            con
+                            uno
+                            de los
+                            dos imperios que monopolizan los Lagos. Sin embargo, cada imperio tiene sus propios
+                            intereses y
+                            pretensiones.
+
+                            La elección que hagan podría decidir no solo su destino sino el equilibrio de poder en todos
+                            los
+                            mundos.
+                        </p>
+                    </div>
+                    <img class="image doubleHeightGridItem" src="./assets/oposing-leaders.png"
+                        alt="Dos personajes, uno de rojo, otro de azul, enfrentados con espadas">
+                    <div>
+                        <h3 class="sectionSubtitle">
+                            ¿Qué son los Lagos?
+                        </h3>
+                        <p class="sectionText">
+                            Los Lagos son un conjunto de mundos conectados por portales dimensionales. Cada mundo es
+                            único
+                            y
+                            tiene
+                            sus
+                            propias
+                            reglas y leyes naturales. Los Lagos son un lugar de comercio y diplomacia entre mundos, pero
+                            también
+                            de
+                            guerra
+                            y
+                            conflicto.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section fadeInAnimated">
+                <form class="contactForm" onsubmit="submitFormToAPI(); return false;">
+                    <label class="contactLabel" for="contactTitle">Nombre:</label><br>
+                    <input type="text" id="contactTitle" name="contactTitle" class="contactInput" required><br><br>
+                    <label class="contactLabel" for="contactBody">Texto:</label><br>
+                    <textarea id="contactBody" name="contactBody" rows="4" cols="50" class="contactTextarea"
+                        required></textarea><br><br>
+                    <button type="submit" class="contactButton">Enviar Mensaje</button>
+                </form>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <p>&copy; 2023 Mundo de los Lagos. Todos los derechos reservados.</p>
+            <p>
+                <a href="https://www.privacypolicies.com/generic/" target="_blank">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
