@@ -4,6 +4,11 @@
 
 This repository hosts the website for "El Mundo de los Lagos", a fictional universe where players can explore a network of worlds connected by dimensional portals.
 
+## Wireframes
+
+The wireframes for this project were created using Figma. You can view them here:
+https://www.figma.com/file/98XJeEqn6Wf4xxL73HaeQB/Mundo-de-los-Lagos?type=design&node-id=0%3A1&mode=design&t=UxMf9BbWB2rcMJEJ-1
+
 ## Tech Stack
 
 -   HTML5
