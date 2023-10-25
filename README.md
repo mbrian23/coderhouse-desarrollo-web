@@ -9,6 +9,7 @@ This repository hosts the website for "El Mundo de los Lagos", a fictional unive
 -   HTML5
 -   CSS3
 -   JavaScript
+-   Vercel (for deployment)
 
 ## Getting Started
 
@@ -59,6 +60,6 @@ If you'd like to contribute, please fork the repository and use a feature branch
 
 The code in this project is licensed under MIT license.
 
----
+## Deploy
 
-This README provides an overview of the website, explains the tech stack used, how to get started with the project, and how others can contribute. Adjust the URLs and any specific details to match the actual project details.
+The last version of this project is deployed in: https://coderhouse-desarrollo-web-eta.vercel.app/
