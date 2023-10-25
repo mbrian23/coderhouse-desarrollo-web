@@ -53,10 +53,6 @@ Here is a brief explanation of the key files and directories in this project:
 -   Use the contact form to send messages or inquiries.
 -   Navigate to different pages to learn more about the empire, order, players, and the map of Lagos.
 
-## Contributing
-
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
 ## Links
 
 -   Repository: https://github.com/mbrian23/coderhouse-desarrollo-web
