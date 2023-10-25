@@ -84,11 +84,12 @@
         </section>
         <section class="section fadeInAnimated">
             <form class="contactForm" onsubmit="submitFormToAPI(); return false;">
-                <label class="contactLabel" for="contactTitle">Nombre:</label>
-                <input type="text" id="contactTitle" name="contactTitle" class="contactInput" required />
+                <label class="contactLabel" for="contactEmail">Your email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" class="contactInput" required
+                    placeholder="example@example.com" />
                 <label class="contactLabel" for="contactBody">Texto:</label>
-                <textarea id="contactBody" name="contactBody" rows="4" cols="50" class="contactTextarea"
-                    required></textarea>
+                <textarea id="contactBody" name="contactBody" rows="4" cols="50" class="contactTextarea" required
+                    placeholder="Deje su mensaje aquí"></textarea>
                 <button type="submit" class="contactButton">
                     Enviar Mensaje
                 </button>
