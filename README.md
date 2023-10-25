@@ -46,6 +46,7 @@ Here is a brief explanation of the key files and directories in this project:
 -   `js/`: This directory contains JavaScript files that add interactivity and dynamic content to the website. For instance, `contacts-form.js` within this directory handles the submission of the contact form.
 -   `assets/`: This directory hosts static files such as images, fonts, and other media used across the website.
 -   `pages/`: This directory contains individual HTML files for each sub-page of the website, such as "Empire", "Order", "Players", and "Map".
+-   `wireframes/`: This directory contains the wireframes for the website, which were created using Figma. Only screenshots are saved here.
 
 ## Usage
 
