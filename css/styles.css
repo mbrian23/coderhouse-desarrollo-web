@@ -167,7 +167,6 @@ main {
 
 .navBar h1 {
     margin: 0;
-    font-size: 24px;
     color: #2c3e50;
 }
 
@@ -184,9 +183,11 @@ main {
 }
 
 .navBar li a {
-    padding: 5px 5px;
+    padding: 10px 10px;
     text-decoration: none;
     color: #333;
+    font-size: 1.2rem;
+    font-weight: 900;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -194,6 +195,11 @@ main {
 .navBar li a:hover {
     background-color: #555;
     color: white;
+}
+
+.navBarTitle {
+    font-size: 1.5rem;
+    font-weight: black;
 }
 
 /* Image Styles */
@@ -233,7 +239,7 @@ main {
 }
 
 .title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -285,7 +291,7 @@ main {
 }
 
 .sectionSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -309,10 +315,6 @@ main {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.navBarTitle {
-    font-weight: bolder;
 }
 
 /* Contact US form */
@@ -422,6 +424,13 @@ main {
 
 .timeline-content h3 {
     margin-top: 0;
+}
+
+/* Galery Styles */
+
+.animatedCard:hover {
+    scale: 1.05;
+    transition: scale 0.1s;
 }
 
 /* Mobile Styles */

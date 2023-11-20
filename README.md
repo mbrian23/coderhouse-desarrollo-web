@@ -65,3 +65,7 @@ The code in this project is licensed under MIT license.
 ## Deploy
 
 The last version of this project is deployed in: https://coderhouse-desarrollo-web-eta.vercel.app/
+
+## Attributions
+
+<a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Stockio - Flaticon</a>
