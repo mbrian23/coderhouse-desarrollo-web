@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5e</title>
+    <meta name="description"
+        content="Conoce a los jugadores en el Mundo de los Lagos, mercenarios atrapados entre imperios opuestos, luchando por una oportunidad para regresar a casa.">
+    <meta name="keywords" content="jugadores, Mundo de los Lagos, mercenarios, imperio, orden, aventura">
+    <meta name="keywords" content="D&D, Dungeons and Dragons, 5ª Edición, RPG, Juego de Rol">
+    <meta name="author" content="Mundo de los Lagos Inc.">
+    <meta name="language" content="Spanish">
+    <meta name="copyright" content="&copy; 2023 Mundo de los Lagos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="navBar" role="navigation">
+            <div class="navLeft">
+                <a href="../index.html">
+                    <img class="logoImage" src="../assets/logo.png" alt="Logo">
+                    <h1 class="navBarTitle animate__animated animate__headShake">El mundo de los Lagos</h1>
+                </a>
+            </div>
+            <!-- This is to achieve the hamburger menu functionality without using javascript -->
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="hamburger">☰</label>
+            <ul class="navRight fadeInAnimated">
+                <li class="navListElement"><label for="menuToggle" class="closeButton">✖</label></li>
+                <li class="navListElement"><a href="./empire.html">Imperio</a></li>
+                <li class="navListElement"><a href="./order.html">La Orden</a></li>
+                <li class="navListElement"><a href="./players.html">Ustedes</a></li>
+                <li class="navListElement"><a href="./galery.html">Galería</a></li>
+                <li class="navListElement"><a href="./map.html">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contentContainer" role="main">
+        <section class="section fadeInAnimated faq-section d-flex flex-column align-items-center">
+            <img src="../assets/logo.png" alt="El logo del mundo" class="img-thumbnail w-50" />
+            <h2 class="title">Preguntas Frecuentes de D&D 5e</h2>
+            <div class="accordion  w-100" id="dnd5eFAQ" class="w-100">
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingOne">
+                        <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué es Dungeons & Dragons 5ª Edición?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Dungeons & Dragons 5ª Edición es un juego de rol de mesa diseñado para una narración de
+                            historias y
+                            aventuras inmersivas. Es la última edición de la serie D&D, conocida por sus reglas
+                            simplificadas y enfoque
+                            en el desarrollo de personajes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingTwo">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            ¿Cómo se crea un personaje en D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Para crear un personaje en D&D 5e, se elige una raza (como humano o elfo), una clase (como
+                            guerrero o mago),
+                            se distribuyen puntos de habilidad y se elige un trasfondo que define la historia del
+                            personaje. La
+                            personalización también incluye elegir habilidades, hechizos y equipo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingThree">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            ¿Cuáles son las diferencias principales entre las ediciones de D&D?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Las ediciones de D&D varían en complejidad de reglas, enfoque en la narrativa frente al
+                            combate y mecánicas
+                            de juego. Por ejemplo, la 3ª Edición tiene reglas más complejas y detalladas, mientras que
+                            la 5ª Edición
+                            simplifica las reglas para facilitar el juego y la narrativa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingFour">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            ¿Cómo funciona la progresión de niveles en D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Los personajes ganan experiencia (XP) al superar desafíos y completar aventuras. Al acumular
+                            suficiente XP,
+                            suben de nivel, ganando así más habilidades y poder.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingFive">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            ¿Qué es un Dungeon Master (DM) en D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            El Dungeon Master es el narrador y árbitro del juego. Dirige la historia, controla los
+                            enemigos y toma
+                            decisiones sobre los resultados de las acciones de los jugadores.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingSix">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            ¿Puedo crear mis propias historias y mundos en D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Sí, D&D 5e fomenta la creatividad, permitiendo a los jugadores y DMs crear sus propias
+                            historias,
+                            personajes, mundos y aventuras, ofreciendo una experiencia de juego única.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingSeven">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                            aria-controls="collapseSeven">
+                            ¿Qué dados se necesitan para jugar D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Para jugar D&D 5e se requiere un conjunto de dados poliédricos, que incluye un d4, d6, d8,
+                            d10, d12, d20 y
+                            un d10 porcentual.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion-item">
+                    <h2 class="accordion-header custom-accordion-header" id="headingEight">
+                        <button class="accordion-button custom-accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                            aria-controls="collapseEight">
+                            ¿Cómo se manejan los combates en D&D 5e?
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#dnd5eFAQ">
+                        <div class="accordion-body custom-accordion-body">
+                            Los combates en D&D 5e se basan en turnos. Cada jugador, junto con el DM, toma turnos para
+                            mover sus
+                            personajes y realizar acciones como ataques o hechizos. Los resultados se determinan con
+                            tiradas de dados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <p>
+            &copy; 2023 Mundo de los Lagos. Todos los derechos reservados.
+        </p>
+        <p>
+            <a href="https://www.privacypolicies.com/generic/" target="_blank">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
