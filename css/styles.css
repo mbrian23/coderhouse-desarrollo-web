@@ -1,17 +1,85 @@
 /* CSS reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -29,17 +106,21 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
     content: none;
 }
 
@@ -51,7 +132,7 @@ table {
 /* Finished CSS reset */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     color: #333;
     background-color: #bbd5ed;
@@ -67,7 +148,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navLeft a {
@@ -111,6 +192,11 @@ main {
 .navBar li a:hover {
     background-color: #555;
     color: white;
+}
+
+/* Image Styles */
+.roundedImage {
+    border-radius: 15px;
 }
 
 /* Hamburger Styles */
@@ -161,7 +247,7 @@ main {
 }
 
 .doubleHeightGridItem {
-    grid-area: 1 / 2 / 3 / 3
+    grid-area: 1 / 2 / 3 / 3;
 }
 
 .videocontentContainer iframe {
@@ -192,7 +278,7 @@ main {
 }
 
 .sectionText {
-    font-size: 1.0rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -248,7 +334,7 @@ main {
 .contactInput,
 .contactTextarea {
     border: 1px solid #ccc;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     border-radius: 4px;
     font-size: 1rem;
     margin-bottom: 20px;
@@ -256,7 +342,7 @@ main {
 }
 
 .contactButton {
-    background-color: #AD0101;
+    background-color: #ad0101;
     align-self: center;
     width: fit-content;
     border: none;
@@ -315,7 +401,7 @@ main {
 }
 
 .timeline-item::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 20px;
@@ -377,7 +463,7 @@ main {
         display: block;
     }
 
-    .menuToggle:checked+.hamburger+.navRight {
+    .menuToggle:checked + .hamburger + .navRight {
         display: flex;
     }
 
@@ -386,7 +472,7 @@ main {
     }
 
     .doubleHeightGridItem {
-        grid-area: 1
+        grid-area: 1;
     }
 
     .grid1Small2Medium {
