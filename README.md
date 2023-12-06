@@ -42,7 +42,7 @@ open index.html
 Here is a brief explanation of the key files and directories in this project:
 
 -   `index.html`: This is the main HTML file which serves as the landing page of the website.
--   `css/styles.css`: This file contains the CSS styles used across the website to ensure a consistent and appealing design.
+-   `css/index.css`: This file contains the CSS styles used across the website to ensure a consistent and appealing design.
 -   `js/`: This directory contains JavaScript files that add interactivity and dynamic content to the website. For instance, `contacts-form.js` within this directory handles the submission of the contact form.
 -   `assets/`: This directory hosts static files such as images, fonts, and other media used across the website.
 -   `pages/`: This directory contains individual HTML files for each sub-page of the website, such as "Empire", "Order", "Players", and "Map".
