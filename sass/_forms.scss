@@ -1,0 +1,43 @@
+// _forms.scss
+.contactForm {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #2980b9;
+    padding: 25px;
+    border-radius: 10px;
+
+    .contactLabel {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .contactInput, .contactTextarea {
+        border: 1px solid #ccc;
+        font-family: "Roboto", sans-serif;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .contactButton {
+        background-color: #ad0101;
+        align-self: center;
+        width: fit-content;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin: 5px 0px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #2980b9;
+        }
+    }
+}

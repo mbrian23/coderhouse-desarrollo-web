@@ -1,0 +1,105 @@
+// _navbar.scss
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #e1ecf7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+    h1 {
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        font-weight: 900;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #555;
+            color: white;
+        }
+    }
+}
+
+.navLeft, .navRight {
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.navLeft {
+    .logoImage {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+}
+
+.navRight {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.navBarTitle {
+    font-size: 1.5rem;
+    font-weight: black;
+}
+
+
+@media (max-width: 768px) {
+    .navRight {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        font-size: 4.5rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #bbd5ed;
+        border: none;
+        box-shadow: none;
+        overflow-y: auto;
+        padding-top: 20%;
+        padding-left: 10%;
+    }
+
+    .navRight li {
+        margin: 0;
+    }
+
+    .navRight li a {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .navBarTitle {
+        display: none;
+    }
+
+    .hamburger, .closeButton {
+        display: block;
+    }
+
+    .menuToggle:checked + .hamburger + .navRight {
+        display: flex;
+    }
+}

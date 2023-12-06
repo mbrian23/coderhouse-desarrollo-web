@@ -1,0 +1,109 @@
+// _components.scss
+.videocontentContainer {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.doubleHeightGridItem {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.grid1Small2Medium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.animatedCard:hover {
+    scale: 1.05;
+    transition: scale 0.1s;
+}
+
+.features-list, .timeline, .faq-section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features-list h2, .timeline-content h3 {
+    margin: 0px 0px 10px 0px;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.features-list ul, .timeline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #e74c3c;
+        border: 3px solid #2c3e50;
+    }
+}
+
+.timeline-content {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.custom-accordion-header .accordion-button {
+    background-color: #61a6ef;
+    color: white;
+
+    &:not(.collapsed) {
+        background-color: rgb(77, 135, 198);
+    }
+}
+
+.custom-accordion-body {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 15px;
+    border: 1px solid #dddddd;
+}
+
+@media (max-width: 768px) {
+    .doubleHeightGridItem {
+        grid-area: 1;
+    }
+
+    .grid1Small2Medium {
+        grid-template-columns: 1fr;
+    }
+}

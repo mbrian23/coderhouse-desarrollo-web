@@ -1,0 +1,15 @@
+// _animations.scss
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInAnimated {
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+}
