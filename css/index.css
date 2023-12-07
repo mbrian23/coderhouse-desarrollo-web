@@ -168,6 +168,11 @@ main {
   object-fit: cover;
 }
 
+.invertColor {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .videocontentContainer {
   position: relative;
   margin-top: 20px;

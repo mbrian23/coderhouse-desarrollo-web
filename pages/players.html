@@ -26,6 +26,7 @@
 
 <body>
     <header>
+        <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
         <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -62,10 +63,20 @@
             </div>
         </nav>
     </header>
-    <main class="contentContainer" role="main">
-        <section class="section animate__animated animate__fadeIn">
-            <div class="grid1Small2Medium">
-                <div>
+    <main id="main" class="contentContainer" role="main">
+        <nav aria-label="breadcrumb" class="container-md pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="../index.html">Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Jugadores</li>
+            </ol>
+        </nav>
+        <section class="section container-md container-md animate__animated animate__fadeIn">
+            <div class="row">
+                <div class="col-12">
                     <h2 class="title">
                         Jugadores
                     </h2>
@@ -89,29 +100,33 @@
                         investigarlos,
                         mientras tanto intentan ser suficientemente útiles para no ser aniquilados.
                     </p>
-                    <div>
-                        <h3 class="sectionSubtitle">
-                            Actualidad
-                        </h3>
-                        <p class="sectionText">
-                            Ustedes son una equipo de mercenarios medianamente reconocidos, han vivido experiencias
-                            de
-                            vida o muerte juntos y se han
-                            salvado la vida mutuamente en repetidas ocasiones y logrado obtener gran confianza en el
-                            equipo
-                            y
-                            sus
-                            integrantes.
-                        </p>
+                    <h3 class="sectionSubtitle">
+                        Actualidad
+                    </h3>
+                    <p class="sectionText">
+                        Ustedes son una equipo de mercenarios medianamente reconocidos, han vivido experiencias
+                        de
+                        vida o muerte juntos y se han
+                        salvado la vida mutuamente en repetidas ocasiones y logrado obtener gran confianza en el
+                        equipo
+                        y
+                        sus
+                        integrantes.
+                    </p>
+                </div>
+            </div>
+            <a class="col-12 animate__animated animate__zoomIn" href="./faq.html">
+                <div class="position-relative">
+                    <div class="animate__headShake animate__delay-4s">
+                        <img class="image roundedImage" src="../assets/players.jpg" alt="Representación de jugadores" />
+                        <img width="40" height="40" class="invertColor m-2 position-absolute bottom-0 end-0"
+                            src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-tap-hand-gestures-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+                            alt="external-tap-hand-gestures-vitaliy-gorbachev-lineal-vitaly-gorbachev" />
                     </div>
                 </div>
-
-                <a class="animate__animated animate__zoomIn" href="./dnd.html">
-                    <img class="image roundedImage" src="../assets/players.jpg" alt="Representación de jugadores">
-                </a>
-            </div>
+            </a>
         </section>
-        <section class="section animate__animated animate__fadeIn">
+        <section class="container-md section animate__animated animate__fadeIn">
             <h2 class="title">
                 Cómo jugar
             </h2>

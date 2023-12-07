@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa del Mundo de los Lagos">
+    <meta name="keywords" content="Mapa, Mundo de los Lagos, Dungeons and Dragons, 5ª Edición, RPG, Juego de Rol">
+    <meta name="author" content="Mundo de los Lagos Inc.">
+    <meta name="language" content="Spanish">
+    <meta name="copyright" content="&copy; 2023 Mundo de los Lagos">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +20,12 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-    <title>Mapa</title>
+    <title>Mapa - Mundo de los Lagos</title>
 </head>
 
 <body>
     <header>
+        <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
         <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -56,8 +62,18 @@
             </div>
         </nav>
     </header>
-    <main class="contentContainer" role="main">
-        <section class="section animate__animated animate__fadeIn">
+    <main id="main" class="contentContainer" role="main">
+        <nav aria-label="breadcrumb" class="container-md pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="../index.html">Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Mapa</li>
+            </ol>
+        </nav>
+        <section class="section container-md animate__animated animate__fadeIn">
             <div class="grid1Small2Medium">
                 <h2 class="title">
                     Mapa
@@ -68,7 +84,7 @@
             </a>
         </section>
 
-        <section class="section animate__animated animate__fadeIn">
+        <section class="section container-md animate__animated animate__fadeIn">
             <h3 class="title">
                 Línea del tiempo
             </h3>

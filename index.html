@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Mundo de los Lagos - Aventura Dimensional</title>
+    <title>El Mundo de los Lagos - Mundo de los Lagos</title>
     <meta name="description"
         content="Descubre el Mundo de los Lagos, donde mercenarios de otros mundos luchan por regresar a casa. Explora imperios, enfrenta desafíos y descubre portales dimensionales.">
     <meta name="keywords" content="Mundo de los Lagos, aventura, mercenarios, imperios, portales dimensionales">
@@ -27,6 +27,7 @@
 
 <body>
     <header>
+        <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
         <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
@@ -63,8 +64,13 @@
             </div>
         </nav>
     </header>
-    <main class="contentContainer" role="main">
-        <section class="section animate__animated animate__fadeIn">
+    <main id="main" class="contentContainer" role="main">
+        <nav aria-label="breadcrumb" class="container-md pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Inicio</li>
+            </ol>
+        </nav>
+        <section class="section container-md animate__animated animate__fadeIn">
             <div class="grid1Small2Medium">
                 <div>
                     <h2 class="title">Sínopsis</h2>
@@ -95,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="section animate__animated animate__fadeIn">
+        <section class="section container-md animate__animated animate__fadeIn">
             <form class="contactForm animate__animated animate__slideInUp" onsubmit="submitFormToAPI(); return false;">
                 <label class="contactLabel" for="contactEmail">Your email:</label>
                 <input type="email" id="contactEmail" name="contactEmail" class="contactInput" required

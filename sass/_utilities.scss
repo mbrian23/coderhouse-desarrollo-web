@@ -15,3 +15,9 @@
     max-height: 550px;
     object-fit: cover;
 }
+
+
+.invertColor {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}

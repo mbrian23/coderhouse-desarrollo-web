@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&D 5e</title>
+    <title>D&D 5e - Mundo de los Lagos</title>
     <meta name="description"
         content="Conoce a los jugadores en el Mundo de los Lagos, mercenarios atrapados entre imperios opuestos, luchando por una oportunidad para regresar a casa.">
-    <meta name="keywords" content="jugadores, Mundo de los Lagos, mercenarios, imperio, orden, aventura">
     <meta name="keywords" content="D&D, Dungeons and Dragons, 5ª Edición, RPG, Juego de Rol">
     <meta name="author" content="Mundo de los Lagos Inc.">
     <meta name="language" content="Spanish">
@@ -29,6 +28,7 @@
 
 <body>
     <header>
+        <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
         <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -66,11 +66,26 @@
         </nav>
     </header>
 
-    <main class="contentContainer" role="main">
-        <section class="section animate__animated animate__fadeIn faq-section d-flex flex-column align-items-center">
-            <img src="../assets/logo.png" alt="El logo del mundo" class="img-thumbnail w-50" />
+    <main id="main" class="contentContainer" role="main">
+        <nav aria-label="breadcrumb" class="container-md pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="../index.html">Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="./players.html">Jugadores
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">D&D 5e</li>
+            </ol>
+        </nav>
+        <section class="section container-md m-auto animate__fadeIn faq-section d-flex flex-column align-items-center">
+            <img src="../assets/logo.png" alt="El logo del mundo" class="w-25 d-none d-md-block" />
             <h2 class="title">Preguntas Frecuentes de D&D 5e</h2>
-            <div class="accordion  w-100" id="dnd5eFAQ" class="w-100">
+            <div class="accordion w-100" id="dnd5eFAQ" class="w-100">
                 <div class="accordion-item custom-accordion-item">
                     <h2 class="accordion-header custom-accordion-header" id="headingOne">
                         <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
