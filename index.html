@@ -15,19 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/contacts-form.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light navbar-expand-lg" role="navigation">
+        <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
                     <img src="./assets/logo.png" width="50px" height="50px" alt="Logo">
@@ -64,11 +64,11 @@
         </nav>
     </header>
     <main class="contentContainer" role="main">
-        <section class="section fadeInAnimated">
+        <section class="section animate__animated animate__fadeIn">
             <div class="grid1Small2Medium">
                 <div>
                     <h2 class="title">Sínopsis</h2>
-                    <p>
+                    <p class="sectionText">
                         Un grupo de mercenarios, provenientes de un portal
                         dimensional, llega inesperadamente al Mundo de los
                         Lagos. Sin medios para regresar a su mundo original,
@@ -80,7 +80,8 @@
                         sino el equilibrio de poder en todos los mundos.
                     </p>
                 </div>
-                <img class="image doubleHeightGridItem roundedImage" src="./assets/oposing-leaders.jpg"
+                <img class="image doubleHeightGridItem roundedImage animate__animated animate__zoomIn"
+                    src="./assets/oposing-leaders.jpg"
                     alt="Dos personajes, uno de rojo, otro de azul, enfrentados con espadas" />
                 <div>
                     <h3 class="sectionSubtitle">¿Qué son los Lagos?</h3>
@@ -94,8 +95,8 @@
                 </div>
             </div>
         </section>
-        <section class="section fadeInAnimated">
-            <form class="contactForm" onsubmit="submitFormToAPI(); return false;">
+        <section class="section animate__animated animate__fadeIn">
+            <form class="contactForm animate__animated animate__slideInUp" onsubmit="submitFormToAPI(); return false;">
                 <label class="contactLabel" for="contactEmail">Your email:</label>
                 <input type="email" id="contactEmail" name="contactEmail" class="contactInput" required
                     placeholder="example@example.com" />
@@ -108,7 +109,7 @@
             </form>
         </section>
     </main>
-    <footer class="footer" role="contentinfo">
+    <footer class="footer animate__animated animate__fadeIn" role="contentinfo">
         <p>&copy; 2023 Mundo de los Lagos. Todos los derechos reservados.</p>
         <p>
             <a href="https://www.privacypolicies.com/generic/" target="_blank">Privacy Policy</a>

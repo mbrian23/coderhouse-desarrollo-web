@@ -1,13 +1,13 @@
 .footer {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: $footer-background;
+    color: $footer-text-color;
     padding: 20px 50px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
 
     a {
-        color: #ffffff;
+        color: $footer-text-color;
         text-decoration: none;
         margin: 0 5px;
 
@@ -24,8 +24,8 @@
             margin: 0 10px;
 
             img {
-                width: 24px; // Adjust as needed
-                height: 24px; // Adjust as needed
+                width: 24px;
+                height: 24px;
                 vertical-align: middle;
             }
         }
