@@ -39,11 +39,6 @@ main {
   padding: 30px;
 }
 
-.container {
-  position: relative;
-  min-height: 100vh;
-}
-
 .section {
   padding-bottom: 35px;
 }
@@ -53,7 +48,7 @@ main {
 }
 
 .footer {
-  background-color: rgba(14, 51, 116, 0.822);
+  background: linear-gradient(90deg, rgba(7, 26, 58, 0.822) 0%, rgba(14, 51, 116, 0.822) 100%);
   color: #ffffff;
   padding: 20px 50px;
   text-align: center;
