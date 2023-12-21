@@ -33,6 +33,7 @@
 .skeleton {
   animation: fadeIn 0.1s ease-in-out;
   animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 15px;
 }
 
 @keyframes skeleton-loading {
