@@ -1,6 +1,11 @@
 // _utilities.scss
 .roundedImage {
-    border-radius: 15px;
+    border-radius: 5px;
+}
+
+.topRounded {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .fullScreenImage {
@@ -13,7 +18,6 @@
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
-
 
 .image {
     width: 100%;

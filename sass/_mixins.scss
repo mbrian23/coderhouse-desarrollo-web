@@ -1,0 +1,8 @@
+// _mixins.scss
+
+@mixin responsive-spacing($property) {
+   #{$property}: 1rem * 1;
+    @media (min-width: 768px) {
+         #{$property}: 0.5rem * 2;
+    }
+}

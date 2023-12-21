@@ -1,5 +1,5 @@
-@import 'variables';
+@use 'sass:color';
 
 .navbar {
-    background-color: $navbar-background;
+    background: linear-gradient(90deg, color.scale($navbar-background, $lightness: -5%) 0%, $navbar-background 100%);
 }

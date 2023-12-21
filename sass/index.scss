@@ -1,5 +1,7 @@
 // index.scss
 @import 'variables';
+@import 'mixins';
+@import 'utilities';
 @import 'base';
 @import 'layout';
 @import 'navbar';
@@ -7,5 +9,4 @@
 @import 'forms';
 @import 'typography';
 @import 'animations';
-@import 'utilities';
 @import 'components';

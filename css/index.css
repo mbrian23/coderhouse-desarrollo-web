@@ -1,3 +1,35 @@
+.roundedImage {
+  border-radius: 5px;
+}
+
+.topRounded {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.fullScreenImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.invertColor {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .image {
+    max-height: 300px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,11 +76,11 @@ main {
 }
 
 .navbar {
-  background-color: rgba(154, 189, 248, 0.822);
+  background: linear-gradient(90deg, rgba(135, 177, 247, 0.822) 0%, rgba(154, 189, 248, 0.822) 100%);
 }
 
 .footer {
-  background: rgba(154, 189, 248, 0.822);
+  background: linear-gradient(90deg, rgba(135, 177, 247, 0.822) 0%, rgba(154, 189, 248, 0.822) 100%);
   color: black;
   padding: 20px 50px;
   text-align: center;
@@ -83,7 +115,7 @@ main {
   text-align: start;
   background-color: rgba(154, 189, 248, 0.822);
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .contactForm .contactLabel {
   color: black;
@@ -92,7 +124,7 @@ main {
 }
 .contactForm .contactInput, .contactForm .contactTextarea {
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1rem;
   margin-bottom: 20px;
   padding: 10px;
@@ -102,7 +134,7 @@ main {
   align-self: center;
   width: fit-content;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 1.2rem;
@@ -146,33 +178,6 @@ main {
   animation-fill-mode: both;
 }
 
-.roundedImage {
-  border-radius: 15px;
-}
-
-.fullScreenImage {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.invertColor {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  max-height: 550px;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .image {
-    max-height: 300px;
-  }
-}
 .videocontentContainer {
   position: relative;
   margin-top: 20px;
@@ -205,7 +210,7 @@ main {
   background: #fff;
   margin: 20px 0;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -221,11 +226,15 @@ main {
 }
 
 .features-list li {
+  padding: 1rem;
   background: #f9f9f9;
-  margin: 5px 0;
-  padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .features-list li {
+    padding: 1rem;
+  }
 }
 
 .timeline-item {
@@ -250,7 +259,7 @@ main {
 .timeline-content {
   background-color: #ecf0f1;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
