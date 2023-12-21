@@ -14,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   font-family: "Roboto", sans-serif;
-  color: rgb(0, 0, 0);
+  color: black;
   background-color: rgb(224, 231, 252);
 }
 
@@ -48,15 +48,15 @@ main {
 }
 
 .footer {
-  background: linear-gradient(90deg, rgba(7, 26, 58, 0.822) 0%, rgba(14, 51, 116, 0.822) 100%);
-  color: #ffffff;
+  background: rgba(154, 189, 248, 0.822);
+  color: black;
   padding: 20px 50px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
 }
 .footer a {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   margin: 0 5px;
 }
@@ -81,12 +81,12 @@ main {
   display: flex;
   flex-direction: column;
   text-align: start;
-  background-color: rgba(14, 51, 116, 0.822);
+  background-color: rgba(154, 189, 248, 0.822);
   padding: 25px;
   border-radius: 10px;
 }
 .contactForm .contactLabel {
-  color: white;
+  color: black;
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
@@ -156,6 +156,11 @@ main {
   object-fit: contain;
 }
 
+.invertColor {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .image {
   width: 100%;
   height: 100%;
@@ -163,11 +168,11 @@ main {
   object-fit: cover;
 }
 
-.invertColor {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+@media (max-width: 768px) {
+  .image {
+    max-height: 300px;
+  }
 }
-
 .videocontentContainer {
   position: relative;
   margin-top: 20px;

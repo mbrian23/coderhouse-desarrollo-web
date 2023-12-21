@@ -1,7 +1,7 @@
 @use 'sass:color';
 
 .footer {
-    background: linear-gradient(90deg, color.scale($footer-background, $lightness: -50%) 0%, $footer-background 100%);
+    background: $footer-background;
     color: $footer-text-color;
     padding: 20px 50px;
     text-align: center;
