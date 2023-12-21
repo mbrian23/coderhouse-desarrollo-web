@@ -64,7 +64,7 @@ The code in this project is licensed under MIT license.
 
 ## Deploy
 
-The last version of this project is deployed in: https://coderhouse-desarrollo-web-eta.vercel.app/
+The last version of this project is deployed in Github Pages
 
 ## Attributions
 
